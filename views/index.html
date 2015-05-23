@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Citalo</title>
+
+		<!-- CSS -->
+		<link href="css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="css/m_style.css" type="text/css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" />	
+        
+        <!-- Scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/data.js"></script>
+	</head>
+	<body>
+		<div id="mn-left">
+			<div class="acc-me">
+				
+			</div>
+			<div class="clr"></div>
+			<span id="edit"><i class="fa fa-caret-down"></i></span>
+			<div id="tab">
+				<form id="setting" method="post">
+					<h4>
+						> CHỈNH SỬA THÔNG TIN
+					</h4>
+					<table width="100%">
+						<tr>
+							<td>
+								<input type="text" id="txt-fullname" placeholder="Nhập tên hiển thị mới" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="password" id="txt-newpass" placeholder="Nhập mật khẩu mới" required>
+							</td>
+						</tr>
+						<tr>
+							<input type="text" id="txt-newava" style="display: none;">
+							<!--Ava-->
+							<div class="span-box scroll-y">
+								<ul id="list-ava">
+									<li>
+										<img src="images/ava/A01.gif">
+									</li>
+									<li>
+										<img src="images/ava/B01.gif">
+									</li>
+									<li>
+										<img src="images/ava/C01.gif">
+									</li>
+									<li>
+										<img src="images/ava/D01.gif">
+									</li>
+									<li>
+										<img src="images/ava/F01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FA01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FB01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FC01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FD01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FH01.gif">
+									</li>
+									<li>
+										<img src="images/ava/J01.gif">
+									</li>
+									<li>
+										<img src="images/ava/L01.gif">
+									</li>
+									<li>
+										<img src="images/ava/H01.gif">
+									</li>
+									<li>
+										<img src="images/ava/M01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FH05.gif">
+									</li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="ok" class="btnForm" value="OK">
+								<input type="button" id="cancel" class="btnForm" value="Hủy">
+							</td>
+						</tr>
+					</table>
+				</form>
+				<div id="friend">
+					<form action="" method="post">
+						<input type="text" placeholder="Tìm kiếm..." name="search" id="ls">
+					</form>
+					<h3 id="back-list"><i class="fa fa-mail-reply"></i>	Trở về danh sách bạn bè</h3>
+					<div class="list">
+						<ul class="list-friend span-box" id="ul_fr">
+							
+						</ul>
+						<ul class="list-friend span-box" id="ul_search_fr">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- End mn-left-->
+
+		<!-- TOP -->
+		<div class="right_imenu">
+			<span id="i-menu">
+				<i class="fa fa-bars fa-2x"></i>
+			</span>
+
+			<span id="i-notifi">
+				<i class="fa fa-bell fa-2x"></i>
+			</span>
+
+			<span class="logout">
+				<i class="fa fa-power-off fa-2x"></i>
+			</span>
+
+			<span id="icon-notif">
+				<i class="fa fa-question-circle"></i>
+			</span>
+		</div>
+
+		<!-- icon Notification
+		<i class="fa fa-exclamation-cicle" id="i_notif"-->
+
+		<!-- dialog Notification-->
+		<span id="topArrow"><img src="images/arrTop.png"></span>
+		<div class="span-box" id="notif">
+			
+			<ul id="list_notif">
+				
+			</ul>
+		</div>
+
+		<div id="content">
+			<header>
+				<img src="images/logo-top.png" alt="top-logo">
+			</header>
+			<div class="top-chat" id="get-fr">
+				<!-- <span>
+					<i class="fa fa-circle onl"></i>
+					Tri Cong Truong
+				</span> -->
+			</div>
+
+			<div class="span-chat">
+				<ul class="discuss" id="history">
+					 
+				</ul>
+			</div>
+			<footer>
+				<form action="" method="post" id="form_input">
+					<table width="100%" row="1" col="7">
+						<tr>
+							<td>
+								<div class="left-tool">
+									<span id="btn-image">
+										<i class="fa fa-picture-o fa-2x"></i>
+									</span>
+									<span id="btn-stick">
+										<i class="fa fa-smile-o fa-2x"></i>
+									</span>
+								</div>
+							</td>
+							<td colspan="4">
+								<input type="text" id="txt-message" name="txt-message" placeholder="Nhập tin nhắn...">
+							</td>
+							<td>
+								<div class="left-tool">
+									<span id="btn-send">
+										<i class="fa fa-paper-plane fa-2x"></i>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</footer>
+		</div>
+		<!-- <i class="fa fa-comments-o fa-2x" id="span-tool"></i> -->
+		
+		<!-- STICK -->
+		<div class="stick">
+			<span id="st_close">CLOSE</span>
+			<div class="stick-ico">
+				<ul id="s-ico">
+					<li>
+						<img src="stick/plus.png">
+					</li>
+					<li>
+						<img src="stick/01.png">
+					</li>
+					<li>
+						<img src="stick/mimi.png">
+					</li>
+					<li>
+						<img src="stick/dog.png">
+					</li>
+					<li>
+						<img src="stick/beach.png">
+					</li>
+				</ul>
+				<div class="clr"></div>
+			</div>
+			<div class="clr"></div>
+			<ul id="list-stick">
+				<li>
+					<img src="stick/01.png">
+				</li>
+				<li>
+					<img src="stick/02.png">
+				</li>
+				<li>
+					<img src="stick/03.png">
+				</li>
+				<li>
+					<img src="stick/04.png">
+				</li>
+				<li>
+					<img src="stick/05.png">
+				</li>
+				<li>
+					<img src="stick/06.png">
+				</li>
+				<li>
+					<img src="stick/07.png">
+				</li>
+				<li>
+					<img src="stick/08.png">
+				</li>
+			</ul>
+		</div>
+		
+
+		
+		<!--GO TOP-->
+		<!-- <a href="#" id="go_top"></a> -->
+		<input type="file" name="txtImg" id="inImg"/> 
+	</body>
+</html>

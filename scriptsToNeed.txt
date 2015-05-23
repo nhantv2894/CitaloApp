@@ -1,0 +1,28 @@
+User.findOne({ username: req.param('uname') },
+        {friend: {$elemMatch: {
+                     fID: "121C910036"}
+                }},
+        function (err, user) {
+        res.send(user.friend);
+    });
+========== return 1 element of array ^^ and get param with syntax: req.param()
+
+myInterval = setInterval(function () {
+            alert("Hello");
+        }, 1000);
+clearInterval(myInterval)
+========== set time for loop request and clear
+
+db.getCollection('messages').find(
+    {_id: ObjectId("554c1cc7d379099e2549e391")},
+    {msg: {$elemMatch: {time: "2015/05/08 15:57:31"}}}
+    )
+
+========== find msg has send
+
+.findAndModify({
+    query: { username: "121C910037" },
+    sort: [],               
+    update: { $set: {isOnl: false} }})
+
+========== Update ^^

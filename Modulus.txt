@@ -1,0 +1,39 @@
+﻿Welcome to Modulus! This guide will walk you through all the necessary steps to deploy a Node.js application on the Modulus platform. Check out the Getting Started guide for more detailed instructions.
+
+WRITE SOMETHING
+
+The first thing you're going to need is some code. If you've got something ready, great! Otherwise grab the Modulus Demo App.
+
+git clone git://github.com/onmodulus/modulus-demo.git
+INSTALL MODULUS CLI (OPTIONAL)
+
+The command line tool is optional, but it's often the most convenient way to deploy an application.
+
+$ npm install -g modulus
+LOGIN
+
+$ modulus login
+Welcome to Modulus
+[?] Enter your username or email: parker@example.com
+[?] Enter your password:
+[✓] Signed in as user spiderman
+If you created an account using GitHub, you can use the --github(-g) to log in with your github credentials.
+
+$ modulus login --github
+Welcome to Modulus
+[?] Enter your GitHub username or email: pparker
+[?] Enter your password:
+[✓] Signed in as user spiderman
+DEPLOY
+
+$ cd path/to/project
+
+$ modulus deploy
+[?] Are you sure you want to use project Lizard Locator? (yes)
+Compressing project...
+6.6 MB written
+Uploading project...
+Upload progress [===================] 100%
+Deploying Project...
+Deploying [       =            ] 
+[✓] Lizard Locator running at lizard-locator-895.onmodulus.net

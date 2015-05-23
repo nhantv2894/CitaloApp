@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Citalo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<!--CSS-->
+		<link href="css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="css/l_style.css" type="text/css" rel="stylesheet" />
+		<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+		<!--Script-->
+		<script src="js/jquery-2.1.1.js"></script>
+        <script src="js/signup.js"></script>
+		
+	</head>
+	<body>
+		<header >
+			<div class="top-logo">
+				<img src="images/app-top.png" alt="top-logo">
+			</div>
+		</header>
+		<div class="wraper">
+			<img src="images/logo_citalo.png" id="topicon">
+			<form class="form-3" method="POST" action='/signup'>
+				<table>
+					<tr>
+						<td style="width: 30%;">
+							<label for="login">Username</label>
+						</td>
+						<td>
+							<input type="text" name="username" id="username" placeholder="Username" required> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="password">Password</label>
+						</td>
+						<td>
+			        		<input type="password" name="password" id="password" placeholder="Password" required> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="alias">Alias</label>
+						</td>
+						<td>
+			        		<input type="text" name="alias" id="alias" placeholder="Alias" required> 
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 40%;">
+							<img src="images/ava/ava0.png" id ="select-ava">
+						</td>
+						<td>
+							<div class="span-box scroll-y">
+								<ul id="list-ava">
+									<li>
+										<img src="images/ava/A01.gif">
+									</li>
+									<li>
+										<img src="images/ava/B01.gif">
+									</li>
+									<li>
+										<img src="images/ava/C01.gif">
+									</li>
+									<li>
+										<img src="images/ava/D01.gif">
+									</li>
+									<li>
+										<img src="images/ava/F01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FA01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FB01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FC01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FD01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FH01.gif">
+									</li>
+									<li>
+										<img src="images/ava/J01.gif">
+									</li>
+									<li>
+										<img src="images/ava/L01.gif">
+									</li>
+									<li>
+										<img src="images/ava/H01.gif">
+									</li>
+									<li>
+										<img src="images/ava/M01.gif">
+									</li>
+									<li>
+										<img src="images/ava/FH05.gif">
+									</li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<p class="clearfix">
+					<input type="text" name="ava" id="ava-src" style="display: none;">
+					<input type="submit" name="submit" value="Đăng kí" id="btn_submit">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>

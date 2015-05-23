@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Citalo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<!--CSS-->
+		<link href="css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="css/l_style.css" type="text/css" rel="stylesheet" />
+		<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+		<!--Script-->
+		<script src="js/jquery-2.1.1.js"></script>
+        <script src="js/main.js"></script>
+	</head>
+	<body>
+		<header >
+			<div class="top-logo">
+				<img src="images/app-top.png" alt="top-logo">
+			</div>
+		</header>
+		<div class="wraper">
+			<img src="images/logo_citalo.png" id="topicon">
+			<form class="form-3" method="POST" action='/login'>
+			    <table>
+					<tr>
+						<td style="width: 30%;">
+							<label for="login">Username</label>
+						</td>
+						<td>
+							<input type="text" name="username" id="username" placeholder="Username" required> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="password">Password</label>
+						</td>
+						<td>
+			        		<input type="password" name="password" id="password" placeholder="Password" required> 
+						</td>
+					</tr>
+				</table> 
+				<table>
+					<tr style="width: 100%;">
+						<td style="width: 28%;">
+							<a href="signup"><i class="fa fa-user-plus"></i>   Đăng kí</a>
+						</td>
+						<td style="width: 50%;">
+							<input type="submit" name="submit" value="Đăng nhập" id="btn_submit">
+						</td>
+					</tr>
+				</table>   
+			</form>
+		</div>
+	</body>
+</html>
